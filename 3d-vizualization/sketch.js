@@ -6,13 +6,18 @@ let windowWidth = window.innerWidth;
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
+  var easy=createEasyCam();
+  let state = {
+    distance : 300,                 // scalar
+    center   : [0, 0, 0],         // vector
+    rotation : [0, 0, 0, 0],  // quaternion
+  };
+  easy.setState(state, 1000); // animate to state over the period of 1 second
+  document.oncontextmenu = function() { return false; }
 }
 
 function draw() {
   background(0);
-  rotateX(angle);
-  rotateY(angle * 0.3);
-  rotateZ(angle * 1.2);
   normalMaterial();
   box(200);
   angle += 0.01;

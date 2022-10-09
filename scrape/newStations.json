@@ -1,0 +1,1205 @@
+[
+  {
+    "name": "KAMNIK",
+    "number": -1,
+    "lat": 180,
+    "lng": 450,
+    "triangles": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "name": "VISNJA GORA",
+    "number": -2,
+    "let": -20,
+    "lng": 350,
+    "triangles": [
+      2,
+      3,
+      4,
+      11,
+      37,
+      56,
+      72,
+      76
+    ]
+  },
+  {
+    "name": "PODLIPA",
+    "number": -3,
+    "let": 40,
+    "lng": 800,
+    "triangles": [
+      0,
+      11,
+      18,
+      65,
+      85,
+      86
+    ]
+  },
+  {
+    "name": "LIDL BEŽIGRAD",
+    "number": 59,
+    "lat": 63.797,
+    "lng": 506.854,
+    "triangles": [
+      5,
+      7,
+      16,
+      24,
+      25
+    ]
+  },
+  {
+    "name": "ŠMARTINSKI PARK",
+    "number": 54,
+    "lat": 65.206,
+    "lng": 529.911,
+    "triangles": [
+      109,
+      120,
+      122,
+      148,
+      151
+    ]
+  },
+  {
+    "name": "SAVSKO NASELJE 1-ŠMARTINSKA CESTA",
+    "number": 45,
+    "lat": 62.475,
+    "lng": 524.321,
+    "triangles": [
+      8,
+      17,
+      22,
+      109,
+      110,
+      117,
+      122,
+      123
+    ]
+  },
+  {
+    "name": "ČRNUČE",
+    "number": 68,
+    "lat": 102.446,
+    "lng": 530.213,
+    "triangles": [
+      0,
+      1,
+      18,
+      19,
+      27,
+      28
+    ]
+  },
+  {
+    "name": "VILHARJEVA CESTA",
+    "number": 11,
+    "lat": 60.05,
+    "lng": 513.02,
+    "triangles": [
+      5,
+      8,
+      9,
+      16,
+      17,
+      91,
+      92
+    ]
+  },
+  {
+    "name": "MASARYKOVA DDC",
+    "number": 10,
+    "lat": 57.63,
+    "lng": 514.264,
+    "triangles": [
+      9,
+      10,
+      44,
+      45,
+      91,
+      129,
+      130
+    ]
+  },
+  {
+    "name": "POGAČARJEV TRG-TRŽNICA",
+    "number": 2,
+    "lat": 51.093,
+    "lng": 507.186,
+    "triangles": [
+      101,
+      104,
+      142,
+      143
+    ]
+  },
+  {
+    "name": "CANKARJEVA UL.-NAMA",
+    "number": 4,
+    "lat": 52.431,
+    "lng": 503.257,
+    "triangles": [
+      39,
+      40,
+      102,
+      103,
+      125,
+      127
+    ]
+  },
+  {
+    "name": "ANTONOV TRG",
+    "number": 41,
+    "lat": 41.753,
+    "lng": 477.016,
+    "triangles": [
+      30,
+      68,
+      70,
+      71,
+      96,
+      97
+    ]
+  },
+  {
+    "name": "PRUŠNIKOVA",
+    "number": 73,
+    "lat": 90.608,
+    "lng": 471.637,
+    "triangles": [
+      1,
+      2,
+      3,
+      27,
+      57,
+      58,
+      60
+    ]
+  },
+  {
+    "name": "TEHNOLOŠKI PARK",
+    "number": 76,
+    "lat": 48.43,
+    "lng": 461.086,
+    "triangles": [
+      4,
+      31,
+      56,
+      66,
+      69
+    ]
+  },
+  {
+    "name": "KOSEŠKI BAJER",
+    "number": 66,
+    "lat": 68.443,
+    "lng": 470.913,
+    "triangles": [
+      3,
+      4,
+      31,
+      34,
+      42,
+      57,
+      105,
+      106
+    ]
+  },
+  {
+    "name": "TIVOLI",
+    "number": 19,
+    "lat": 59.52,
+    "lng": 498.2,
+    "triangles": [
+      5,
+      7,
+      21,
+      32,
+      33,
+      92,
+      93
+    ]
+  },
+  {
+    "name": "TRŽNICA MOSTE",
+    "number": 25,
+    "lat": 55.801,
+    "lng": 534.156,
+    "triangles": [
+      10,
+      23,
+      44,
+      50,
+      54
+    ]
+  },
+  {
+    "name": "GRUDNOVO NABREŽJE-KARLOVŠKA C.",
+    "number": 6,
+    "lat": 45.748,
+    "lng": 506.196,
+    "triangles": [
+      6,
+      26,
+      112,
+      114,
+      131,
+      132
+    ]
+  },
+  {
+    "name": "LIDL-LITIJSKA CESTA",
+    "number": 51,
+    "lat": 47.689,
+    "lng": 547.416,
+    "triangles": [
+      13,
+      14,
+      47,
+      51,
+      52,
+      64,
+      84,
+      155,
+      156,
+      158,
+      159
+    ]
+  },
+  {
+    "name": "ŠPORTNI CENTER STOŽICE",
+    "number": 31,
+    "lat": 82.59,
+    "lng": 520.16,
+    "triangles": [
+      12,
+      19,
+      20,
+      28,
+      29,
+      87,
+      136,
+      138
+    ]
+  },
+  {
+    "name": "ŠPICA",
+    "number": 22,
+    "lat": 40.213,
+    "lng": 512.044,
+    "triangles": [
+      6,
+      48,
+      49,
+      131,
+      133
+    ]
+  },
+  {
+    "name": "ROŠKA - STRELIŠKA",
+    "number": 80,
+    "lat": 45,
+    "lng": 518.46,
+    "triangles": [
+      6,
+      13,
+      47,
+      48,
+      112,
+      113
+    ]
+  },
+  {
+    "name": "BAVARSKI DVOR",
+    "number": 8,
+    "lat": 56.82,
+    "lng": 505.51,
+    "triangles": [
+      21,
+      93,
+      126,
+      128
+    ]
+  },
+  {
+    "name": "STARA CERKEV",
+    "number": 20,
+    "lat": 63.42,
+    "lng": 494.588,
+    "triangles": [
+      7,
+      24,
+      32,
+      34,
+      42,
+      43
+    ]
+  },
+  {
+    "name": "SITULA",
+    "number": 46,
+    "lat": 59.433,
+    "lng": 520.51,
+    "triangles": [
+      8,
+      9,
+      10,
+      22,
+      23
+    ]
+  },
+  {
+    "name": "ILIRSKA ULICA",
+    "number": 17,
+    "lat": 53.144,
+    "lng": 513.479,
+    "triangles": [
+      45,
+      63,
+      101,
+      102,
+      125,
+      129,
+      143,
+      144
+    ]
+  },
+  {
+    "name": "LIDL - RUDNIK",
+    "number": 72,
+    "lat": 20.012,
+    "lng": 532.479,
+    "triangles": [
+      11,
+      37,
+      83,
+      85
+    ]
+  },
+  {
+    "name": "KOPALIŠČE KOLEZIJA",
+    "number": 64,
+    "lat": 42.867,
+    "lng": 495.239,
+    "triangles": [
+      26,
+      30,
+      96,
+      98,
+      132,
+      134
+    ]
+  },
+  {
+    "name": "POVŠETOVA - KAJUHOVA",
+    "number": 74,
+    "lat": 51.512,
+    "lng": 539.272,
+    "triangles": [
+      14,
+      15,
+      46,
+      51,
+      55
+    ]
+  },
+  {
+    "name": "DUNAJSKA C.-PS MERCATOR",
+    "number": 29,
+    "lat": 74.193,
+    "lng": 511.134,
+    "triangles": [
+      35,
+      150,
+      164,
+      166
+    ]
+  },
+  {
+    "name": "CITYPARK",
+    "number": 34,
+    "lat": 68.805,
+    "lng": 546.257,
+    "triangles": [
+      12,
+      20,
+      80,
+      118,
+      119,
+      120,
+      121,
+      148,
+      149
+    ]
+  },
+  {
+    "name": "KOPRSKA ULICA",
+    "number": 32,
+    "lat": 33.408,
+    "lng": 482.468,
+    "triangles": [
+      36,
+      38,
+      73,
+      74
+    ]
+  },
+  {
+    "name": "LIDL - VOJKOVA CESTA",
+    "number": 30,
+    "lat": 75.89,
+    "lng": 520.11,
+    "triangles": [
+      12,
+      35,
+      136,
+      137,
+      149,
+      150
+    ]
+  },
+  {
+    "name": "POLJANSKA-POTOČNIKOVA",
+    "number": 55,
+    "lat": 48.982,
+    "lng": 522.709,
+    "triangles": [
+      13,
+      14,
+      15,
+      61,
+      113,
+      145,
+      147
+    ]
+  },
+  {
+    "name": "POVŠETOVA-GRABLOVIČEVA",
+    "number": 57,
+    "lat": 51.863,
+    "lng": 530.349,
+    "triangles": [
+      15,
+      46,
+      61,
+      62
+    ]
+  },
+  {
+    "name": "PARK NAVJE-ŽELEZNA CESTA",
+    "number": 12,
+    "lat": 63.61,
+    "lng": 513.15,
+    "triangles": [
+      16,
+      17,
+      25,
+      110,
+      111
+    ]
+  },
+  {
+    "name": "ZALOG",
+    "number": 71,
+    "lat": 60.43,
+    "lng": 613.797,
+    "triangles": [
+      18,
+      19,
+      20,
+      65,
+      80,
+      82
+    ]
+  },
+  {
+    "name": "CESTA NA ROŽNIK",
+    "number": 53,
+    "lat": 53.241,
+    "lng": 486.206,
+    "triangles": [
+      21,
+      33,
+      39,
+      41,
+      126,
+      127
+    ]
+  },
+  {
+    "name": "HOFER-KAJUHOVA",
+    "number": 48,
+    "lat": 56.405,
+    "lng": 540.901,
+    "triangles": [
+      22,
+      23,
+      50,
+      53,
+      117,
+      161,
+      162
+    ]
+  },
+  {
+    "name": "DUNAJSKA C.-PS PETROL",
+    "number": 27,
+    "lat": 65.136,
+    "lng": 509.112,
+    "triangles": [
+      24,
+      25,
+      43,
+      111,
+      152,
+      167,
+      168
+    ]
+  },
+  {
+    "name": "STUDENEC",
+    "number": 69,
+    "lat": 54.615,
+    "lng": 576.031,
+    "triangles": [
+      64,
+      81,
+      158,
+      160
+    ]
+  },
+  {
+    "name": "PARKIRIŠČE NUK 2-FF",
+    "number": 14,
+    "lat": 46.377,
+    "lng": 501.256,
+    "triangles": [
+      26,
+      98,
+      99,
+      114,
+      116
+    ]
+  },
+  {
+    "name": "BRATOVŠEVA PLOŠČAD",
+    "number": 42,
+    "lat": 89.29,
+    "lng": 513.751,
+    "triangles": [
+      27,
+      28,
+      29,
+      58,
+      59
+    ]
+  },
+  {
+    "name": "KONGRESNI TRG-ŠUBIČEVA ULICA",
+    "number": 3,
+    "lat": 50.388,
+    "lng": 504.623,
+    "triangles": [
+      40,
+      94,
+      103,
+      104,
+      115,
+      142,
+      146
+    ]
+  },
+  {
+    "name": "BS4-STOŽICE",
+    "number": 43,
+    "lat": 86.761,
+    "lng": 514.151,
+    "triangles": [
+      29,
+      59,
+      87,
+      89
+    ]
+  },
+  {
+    "name": "GERBIČEVA - ŠPORTNI PARK SVOBODA",
+    "number": 78,
+    "lat": 39.384,
+    "lng": 485.458,
+    "triangles": [
+      30,
+      36,
+      70,
+      74,
+      75,
+      134,
+      135
+    ]
+  },
+  {
+    "name": "ŽIVALSKI VRT",
+    "number": 52,
+    "lat": 52.454,
+    "lng": 472.149,
+    "triangles": [
+      31,
+      32,
+      33,
+      34,
+      41,
+      66,
+      67
+    ]
+  },
+  {
+    "name": "VOKA - SLOVENČEVA",
+    "number": 82,
+    "lat": 75.207,
+    "lng": 504.734,
+    "triangles": [
+      35,
+      107,
+      137,
+      141,
+      164,
+      165
+    ]
+  },
+  {
+    "name": "BTC CITY/DVORANA A",
+    "number": 35,
+    "lat": 65.297,
+    "lng": 543.996,
+    "triangles": [
+      118,
+      121,
+      124
+    ]
+  },
+  {
+    "name": "TRNOVO",
+    "number": 37,
+    "lat": 37.84,
+    "lng": 500.01,
+    "triangles": [
+      36,
+      38,
+      49,
+      133,
+      135,
+      153,
+      154
+    ]
+  },
+  {
+    "name": "P+R BARJE",
+    "number": 38,
+    "lat": 27.49,
+    "lng": 499.58,
+    "triangles": [
+      37,
+      38,
+      72,
+      73,
+      83,
+      153,
+      157
+    ]
+  },
+  {
+    "name": "ROŽNA DOLINA-ŠKRABČEVA UL.",
+    "number": 26,
+    "lat": 51.439,
+    "lng": 492.73,
+    "triangles": [
+      39,
+      40,
+      41,
+      67,
+      94,
+      95
+    ]
+  },
+  {
+    "name": "KINO ŠIŠKA",
+    "number": 21,
+    "lat": 69.28,
+    "lng": 489.71,
+    "triangles": [
+      42,
+      43,
+      105,
+      107,
+      165,
+      167
+    ]
+  },
+  {
+    "name": "BRODARJEV TRG",
+    "number": 49,
+    "lat": 54.398,
+    "lng": 553.319,
+    "triangles": [
+      52,
+      53,
+      159,
+      161
+    ]
+  },
+  {
+    "name": "ZALOŠKA C.-GRABLOVIČEVA C.",
+    "number": 24,
+    "lat": 54.41,
+    "lng": 529.78,
+    "triangles": [
+      44,
+      45,
+      46,
+      54,
+      55,
+      62,
+      63
+    ]
+  },
+  {
+    "name": "DOLENJSKA C. - STRELIŠČE",
+    "number": 79,
+    "lat": 38.866,
+    "lng": 517.605,
+    "triangles": [
+      47,
+      48,
+      49,
+      154,
+      155
+    ]
+  },
+  {
+    "name": "ŠTEPANJSKO NASELJE 1-JAKČEVA ULICA",
+    "number": 47,
+    "lat": 53.047,
+    "lng": 545.125,
+    "triangles": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+    ]
+  },
+  {
+    "name": "SOSESKA NOVO BRDO",
+    "number": 75,
+    "lat": 45.617,
+    "lng": 462.281,
+    "triangles": [
+      56,
+      68,
+      69,
+      71,
+      76,
+      77
+    ]
+  },
+  {
+    "name": "TRŽNICA KOSEZE",
+    "number": 58,
+    "lat": 74.315,
+    "lng": 475.483,
+    "triangles": [
+      57,
+      60,
+      78,
+      79,
+      106,
+      108
+    ]
+  },
+  {
+    "name": "ALEJA - CELOVŠKA CESTA",
+    "number": 62,
+    "lat": 77.302,
+    "lng": 482.581,
+    "triangles": [
+      78,
+      88,
+      108,
+      139,
+      140
+    ]
+  },
+  {
+    "name": "MERCATOR CENTER ŠIŠKA",
+    "number": 33,
+    "lat": 87.079,
+    "lng": 475.439,
+    "triangles": [
+      58,
+      59,
+      60,
+      79,
+      89,
+      90
+    ]
+  },
+  {
+    "name": "GH ŠENTPETER-NJEGOŠEVA C.",
+    "number": 16,
+    "lat": 52.57,
+    "lng": 519.28,
+    "triangles": [
+      61,
+      62,
+      63,
+      144,
+      145
+    ]
+  },
+  {
+    "name": "HOFER - POLJE",
+    "number": 84,
+    "lat": 53.718,
+    "lng": 589.284,
+    "triangles": [
+      64,
+      65,
+      81,
+      82,
+      84,
+      86
+    ]
+  },
+  {
+    "name": "VIŠKO POLJE",
+    "number": 65,
+    "lat": 46.189,
+    "lng": 469.037,
+    "triangles": [
+      66,
+      67,
+      68,
+      69,
+      95,
+      97,
+      100
+    ]
+  },
+  {
+    "name": "BONIFACIJA",
+    "number": 40,
+    "lat": 39.641,
+    "lng": 472.664,
+    "triangles": [
+      70,
+      71,
+      75,
+      77
+    ]
+  },
+  {
+    "name": "P + R DOLGI MOST",
+    "number": 39,
+    "lat": 37.003,
+    "lng": 465.229,
+    "triangles": [
+      72,
+      73,
+      74,
+      75,
+      76,
+      77
+    ]
+  },
+  {
+    "name": "DRAVLJE",
+    "number": 67,
+    "lat": 79.84,
+    "lng": 479.952,
+    "triangles": [
+      78,
+      79,
+      88,
+      90
+    ]
+  },
+  {
+    "name": "POLJE",
+    "number": 70,
+    "lat": 57.22,
+    "lng": 583.537,
+    "triangles": [
+      80,
+      81,
+      82,
+      119,
+      160,
+      163
+    ]
+  },
+  {
+    "name": "SUPERNOVA LJUBLJANA - RUDNIK",
+    "number": 83,
+    "lat": 21.586,
+    "lng": 536.745,
+    "triangles": [
+      83,
+      84,
+      85,
+      86,
+      156,
+      157
+    ]
+  },
+  {
+    "name": "SREDNJA FRIZERSKA ŠOLA",
+    "number": 56,
+    "lat": 80.522,
+    "lng": 491.439,
+    "triangles": [
+      87,
+      88,
+      89,
+      90,
+      138,
+      139
+    ]
+  },
+  {
+    "name": "TRG OF-KOLODVORSKA UL.",
+    "number": 9,
+    "lat": 57.421,
+    "lng": 510.265,
+    "triangles": [
+      91,
+      92,
+      93,
+      128,
+      130
+    ]
+  },
+  {
+    "name": "TRG MDB",
+    "number": 13,
+    "lat": 47.565,
+    "lng": 495.687,
+    "triangles": [
+      94,
+      95,
+      99,
+      100,
+      115,
+      116
+    ]
+  },
+  {
+    "name": "TRŽAŠKA C.-ILIRIJA",
+    "number": 18,
+    "lat": 44.629,
+    "lng": 486.699,
+    "triangles": [
+      96,
+      97,
+      98,
+      99,
+      100
+    ]
+  },
+  {
+    "name": "PREŠERNOV TRG-PETKOVŠKOVO NABREŽJE",
+    "number": 1,
+    "lat": 51.367,
+    "lng": 506.542,
+    "triangles": [
+      101,
+      102,
+      103,
+      104
+    ]
+  },
+  {
+    "name": "MERCATOR MARKET - CELOVŠKA C. 163",
+    "number": 60,
+    "lat": 73.264,
+    "lng": 485.942,
+    "triangles": [
+      105,
+      106,
+      107,
+      108,
+      140,
+      141
+    ]
+  },
+  {
+    "name": "SAVSKO NASELJE 2-LINHARTOVA CESTA",
+    "number": 44,
+    "lat": 64.546,
+    "lng": 518.013,
+    "triangles": [
+      109,
+      110,
+      111,
+      151,
+      152
+    ]
+  },
+  {
+    "name": "BREG",
+    "number": 5,
+    "lat": 46.498,
+    "lng": 505.148,
+    "triangles": [
+      112,
+      113,
+      114,
+      115,
+      116,
+      146,
+      147
+    ]
+  },
+  {
+    "name": "BTC CITY ATLANTIS",
+    "number": 36,
+    "lat": 63.081,
+    "lng": 547.851,
+    "triangles": [
+      117,
+      118,
+      119,
+      123,
+      124,
+      162,
+      163
+    ]
+  },
+  {
+    "name": "IKEA",
+    "number": 63,
+    "lat": 65.175,
+    "lng": 539.537,
+    "triangles": [
+      120,
+      121,
+      122,
+      123,
+      124
+    ]
+  },
+  {
+    "name": "MIKLOŠIČEV PARK",
+    "number": 7,
+    "lat": 54.168,
+    "lng": 507.06,
+    "triangles": [
+      125,
+      126,
+      127,
+      128,
+      129,
+      130
+    ]
+  },
+  {
+    "name": "BARJANSKA C.-CENTER STAREJŠIH TRNOVO",
+    "number": 23,
+    "lat": 40.81,
+    "lng": 499.51,
+    "triangles": [
+      131,
+      132,
+      133,
+      134,
+      135
+    ]
+  },
+  {
+    "name": "LEK - VEROVŠKOVA",
+    "number": 81,
+    "lat": 76.856,
+    "lng": 500.222,
+    "triangles": [
+      136,
+      137,
+      138,
+      139,
+      140,
+      141
+    ]
+  },
+  {
+    "name": "AMBROŽEV TRG",
+    "number": 15,
+    "lat": 49.877,
+    "lng": 516.308,
+    "triangles": [
+      142,
+      143,
+      144,
+      145,
+      146,
+      147
+    ]
+  },
+  {
+    "name": "VOJKOVA - GASILSKA BRIGADA",
+    "number": 77,
+    "lat": 68.727,
+    "lng": 516.858,
+    "triangles": [
+      148,
+      149,
+      150,
+      151,
+      152,
+      166,
+      168
+    ]
+  },
+  {
+    "name": "RAKOVNIK",
+    "number": 61,
+    "lat": 36.284,
+    "lng": 522.948,
+    "triangles": [
+      153,
+      154,
+      155,
+      156,
+      157
+    ]
+  },
+  {
+    "name": "PREGLOV TRG",
+    "number": 50,
+    "lat": 54.554,
+    "lng": 559.08,
+    "triangles": [
+      158,
+      159,
+      160,
+      161,
+      162,
+      163
+    ]
+  },
+  {
+    "name": "PLEČNIKOV STADION",
+    "number": 28,
+    "lat": 69.42,
+    "lng": 510.52,
+    "triangles": [
+      164,
+      165,
+      166,
+      167,
+      168
+    ]
+  }
+]
