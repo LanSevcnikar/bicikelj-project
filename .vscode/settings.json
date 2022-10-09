@@ -9,5 +9,6 @@
     "cmath": "cpp",
     "utility": "cpp",
     "cstdlib": "cpp"
-  }
+  },
+  "netbeans.javaSupport.enabled": true
 }

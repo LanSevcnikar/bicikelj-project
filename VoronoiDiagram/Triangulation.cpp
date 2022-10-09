@@ -273,11 +273,36 @@ void fillInStations(){
 }
 
 bool areTrianglesNeigbours(Triangle a, Triangle b){
+  pair<Point, Point> edge1 = mp(a.p1, a.p2);
+  pair<Point, Point> edge2 = mp(a.p2, a.p3);
+  pair<Point, Point> edge3 = mp(a.p3, a.p1);
+
+  pair<Point, Point> newEdge1 = mp(b.p1, b.p2);
+  pair<Point, Point> newEdge2 = mp(b.p2, b.p3);
+  pair<Point, Point> newEdge3 = mp(b.p3, b.p1);
+
+  bool edge1Shared = false;
+  bool edge2Shared = false;
+  bool edge3Shared = false;
+
+  //loop through all other bad triangles and check if the edges are shared
   
+  if (!edge1Shared && isSameEdge(edge1, newEdge1)) edge1Shared = true;
+  if (!edge1Shared && isSameEdge(edge1, newEdge2)) edge1Shared = true;
+  if (!edge1Shared && isSameEdge(edge1, newEdge3)) edge1Shared = true;
 
+  if (!edge2Shared && isSameEdge(edge2, newEdge1)) edge2Shared = true;
+  if (!edge2Shared && isSameEdge(edge2, newEdge2)) edge2Shared = true;
+  if (!edge2Shared && isSameEdge(edge2, newEdge3)) edge2Shared = true;
 
+  if (!edge3Shared && isSameEdge(edge3, newEdge1)) edge3Shared = true;
+  if (!edge3Shared && isSameEdge(edge3, newEdge2)) edge3Shared = true;
+  if (!edge3Shared && isSameEdge(edge3, newEdge3)) edge3Shared = true;
 
-  
+  if (edge1Shared) return true;
+  if (edge2Shared) return true;
+  if (edge3Shared) return true;
+
   return false;
 }
 
@@ -331,6 +356,17 @@ int main(){
     printToFile << ((abs(triangles[i].p1.y) < ERR) ? 0 : triangles[i].p1.x) << "," << ((abs(triangles[i].p1.y) < ERR) ? 0 : triangles[i].p1.y) << ",";
     printToFile << ((abs(triangles[i].p2.y) < ERR) ? 0 : triangles[i].p2.x) << "," << ((abs(triangles[i].p2.y) < ERR) ? 0 : triangles[i].p2.y) << ",";
     printToFile << ((abs(triangles[i].p3.y) < ERR) ? 0 : triangles[i].p3.x) << "," << ((abs(triangles[i].p3.y) < ERR) ? 0 : triangles[i].p3.y) << endl;
+  }
+
+  printToFile << "The Voronoi Diagrams" << endl;
+  //loop through all triangles twice
+  for(int i = 0; i < triangles.size(); i++){
+    for(int j = i+1; j < triangles.size(); j++){
+      if(areTrianglesNeigbours(triangles[i], triangles[j])){
+        printToFile << "{x1: " << triangles[i].center.x << ", y1: " << triangles[i].center.y << ", x2: " << triangles[j].center.x << ", y2: " << triangles[j].center.y << "}," << endl;
+        
+      }
+    }
   }
 
 
