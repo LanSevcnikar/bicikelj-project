@@ -30,13 +30,64 @@ function scrapeData() {
     });
 }
 
+//push the data to git
+function pushToGit() {
+  const { exec } = require("child_process");
+  exec("git add .", (error, stdout, stderr) => {
+    if (error) {
+      console.log(`error: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.log(`stderr: ${stderr}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+  });
+  exec("git commit -m 'data'", (error, stdout, stderr) => {
+    if (error) {
+      console.log(`error: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.log(`stderr: ${stderr}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+  });
+  exec("git push", (error, stdout, stderr) => {
+    if (error) {
+      console.log(`error: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.log(`stderr: ${stderr}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+  });
+  //push data to github
+  exec("git push", (error, stdout, stderr) => {
+    if (error) {
+      console.log(`error: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.log(`stderr: ${stderr}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+  });
+}
+
 //call a function every time the minutes are divisible by 5
 function callEveryFiveMinutes() {
   let date = new Date();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  if (minutes % 10 === 0 && seconds === 00) {
+  if (minutes % 5 === 0 && seconds === 00) {
     scrapeData();
+    pushToGit();
   }
   setTimeout(callEveryFiveMinutes, 1000);
 }
