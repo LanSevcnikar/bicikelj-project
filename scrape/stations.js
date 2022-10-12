@@ -2225,12 +2225,13 @@ let allTriangles = [
 let newStations = allStations.map((station) => {
     let newStation ={
       ...station,
-      triangles: [],
+      polygon: [],
     }
-    for (let i = 0; i < allTriangles.length; i++) {
-      let triangle = allTriangles[i];
-      if (triangle.p1 === station.number || triangle.p2 === station.number || triangle.p3 === station.number) {
-        newStation.triangles.push(triangle.id);
+    if(station.number >= 0){
+      for(let i = 0; i < station.triangles.length; i++){
+        let triangle = allTriangles.find(triangle => triangle.id === station.triangles[i]);
+        let p1 = allPoints.find(point => point.number === triangle.p1);
+
       }
     }
     return newStation;
@@ -2240,3 +2241,4 @@ let newStations = allStations.map((station) => {
 let fs = require("fs");
 //dump newTriangles into fikle
 fs.writeFileSync("newStations.json", JSON.stringify(newStations));
+// 

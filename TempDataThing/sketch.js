@@ -1,8 +1,6 @@
 //create a p5 project that displays a circle on a canvas the size of the window
 //the circle should be centered on the canvas
 
-
-
 let windowHeight = window.innerHeight - 40;
 let windowWidth = window.innerWidth;
 
@@ -28,10 +26,12 @@ class Point {
 }
 
 class Point2 {
-  constructor(s, x, y) {
+  constructor(s, x, y, address, number) {
     this.s = s;
     this.x = x;
     this.y = y;
+    this.address = address;
+    this.number = number;
   }
 
   //make a function that will return the distance between two points
@@ -114,7 +114,7 @@ function isPointInsideTriangle(p, t) {
 }
 
 function isPointInsideTriangleCircle(p, t) {
-  console.log(p, t);
+  //console.log(p, t);
   return pow(p.x - t.center.x, 2) + pow(p.y - t.center.y, 2) < pow(t.radius, 2);
 }
 
@@ -166,7 +166,7 @@ function addPoint(p) {
     }
   }
 
-  console.log("Adding point", triangles, badTriangles);
+  //console.log("Adding point", triangles, badTriangles);
 
   //find the boundary of the polygonal hole
   for (let i = 0; i < badTriangles.length; i++) {
@@ -174,7 +174,7 @@ function addPoint(p) {
     let e1 = new Edge(t.p1, t.p2);
     let e2 = new Edge(t.p2, t.p3);
     let e3 = new Edge(t.p3, t.p1);
-    console.log("Something, e1, e2, e32", e1, e2, e3);
+    //console.log("Something, e1, e2, e32", e1, e2, e3);
 
     let e1Shared = false;
     let e2Shared = false;
@@ -204,7 +204,7 @@ function addPoint(p) {
     if (!e2Shared) polygon.push(e2);
     if (!e3Shared) polygon.push(e3);
 
-    console.log(e1, e2, e3);
+    //console.log(e1, e2, e3);
   }
   //remove bad triangles from triangulation
   for (let j = 0; j < badTriangles.length; j++) {
@@ -215,11 +215,11 @@ function addPoint(p) {
       }
     }
   }
-  console.log(polygon);
+  //console.log(polygon);
 
   //loop through the sides of the polygon and make new triangles
   for (let j = 0; j < polygon.length; j++) {
-    console.log(polygon[j].p1, polygon[j].p2, p);
+    //console.log(polygon[j].p1, polygon[j].p2, p);
     triangles.push(new Triangle(polygon[j].p1, polygon[j].p2, p));
   }
 }
@@ -256,6 +256,29 @@ function displayVoronoi() {
   }
 }
 
+function loadTheData() {
+  points = [];
+  triangles = [];
+  Data.forEach((point) => {
+    points.push(
+      new Point2(
+        point.name,
+        (point.position.latitude - 46) * 10000,
+        (point.position.longitude - 14) * 10000,
+        point.address,
+        point.number,
+
+      )
+    );
+  });
+  triangles.push(new Triangle(points[0], points[1], points[2]));
+  for (var i = 3; i < points.length; i++) {
+    addPoint(points[i]);
+    console.log(triangles.length, i);
+  }
+  console.log(triangles)
+}
+
 function loadExample() {
   strokeWeight(1);
   points = [];
@@ -266,8 +289,8 @@ function loadExample() {
   //loop through the points
   for (var i = 0; i < points.length; i++) {
     points[i].x = map(points[i].x, -20, 180, 100, width - 100);
-    points[i].y = map(points[i].y,  350, 800, 100, height - 100);
-    console.log(points[i].x + " " + points[i].y);
+    points[i].y = map(points[i].y, 350, 800, 100, height - 100);
+    //console.log(points[i].x + " " + points[i].y);
   }
   triangles.push(new Triangle(points[0], points[1], points[2]));
 
@@ -324,7 +347,9 @@ function loadExample() {
   points.push(new Point2("BRODARJEV TRG", 54.398, 553.319));
   points.push(new Point2("ZALOŠKA C.-GRABLOVIČEVA C.", 54.41, 529.78));
   points.push(new Point2("DOLENJSKA C. - STRELIŠČE", 38.866, 517.605));
-  points.push(new Point2("ŠTEPANJSKO NASELJE 1-JAKČEVA ULICA", 53.047, 545.125));
+  points.push(
+    new Point2("ŠTEPANJSKO NASELJE 1-JAKČEVA ULICA", 53.047, 545.125)
+  );
   points.push(new Point2("SOSESKA NOVO BRDO", 45.617, 462.281));
   points.push(new Point2("TRŽNICA KOSEZE", 74.315, 475.483));
   points.push(new Point2("ALEJA - CELOVŠKA CESTA", 77.302, 482.581));
@@ -341,33 +366,33 @@ function loadExample() {
   points.push(new Point2("TRG OF-KOLODVORSKA UL.", 57.421, 510.265));
   points.push(new Point2("TRG MDB", 47.565, 495.687));
   points.push(new Point2("TRŽAŠKA C.-ILIRIJA", 44.629, 486.699));
-  points.push(new Point2("PREŠERNOV TRG-PETKOVŠKOVO NABREŽJE", 51.367, 506.542));
+  points.push(
+    new Point2("PREŠERNOV TRG-PETKOVŠKOVO NABREŽJE", 51.367, 506.542)
+  );
   points.push(new Point2("MERCATOR MARKET - CELOVŠKA C. 163", 73.264, 485.942));
   points.push(new Point2("SAVSKO NASELJE 2-LINHARTOVA CESTA", 64.546, 518.013));
   points.push(new Point2("BREG", 46.498, 505.148));
   points.push(new Point2("BTC CITY ATLANTIS", 63.081, 547.851));
   points.push(new Point2("IKEA", 65.175, 539.537));
   points.push(new Point2("MIKLOŠIČEV PARK", 54.168, 507.06));
-  points.push(new Point2("BARJANSKA C.-CENTER STAREJŠIH TRNOVO", 40.81, 499.51));
+  points.push(
+    new Point2("BARJANSKA C.-CENTER STAREJŠIH TRNOVO", 40.81, 499.51)
+  );
   points.push(new Point2("LEK - VEROVŠKOVA", 76.856, 500.222));
   points.push(new Point2("AMBROŽEV TRG", 49.877, 516.308));
   points.push(new Point2("VOJKOVA - GASILSKA BRIGADA", 68.727, 516.858));
   points.push(new Point2("RAKOVNIK", 36.284, 522.948));
   points.push(new Point2("PREGLOV TRG", 54.554, 559.08));
   points.push(new Point2("PLEČNIKOV STADION", 69.42, 510.52));
-  
-  for(var i = 3; i < points.length; i++) {
+
+  for (var i = 3; i < points.length; i++) {
     points[i].x = map(points[i].x, -20, 180, 100, width - 100);
-    points[i].y = map(points[i].y,  350, 800, 100, height - 100);
-    console.log(points[i].x + " " + points[i].y);
+    points[i].y = map(points[i].y, 350, 800, 100, height - 100);
+    //console.log(points[i].x + " " + points[i].y);
     addPoint(points[i]);
   }
 
-  console.log(triangles)
-}
-
-function giveMeData(){
-  
+  //console.log(triangles);
 }
 
 function displayHoveredTriangle() {
@@ -435,15 +460,6 @@ function draw() {
 //when the mouse is clicked on the screen, I want a new point made
 function mouseClicked() {
   if (mouseY < 40) return;
-  //check if the point is in at least one triangle
-  let inTriangle = false;
-  for (let i = 0; i < triangles.length; i++) {
-    if (isPointInsideTriangle(new Point(mouseX, mouseY), triangles[i])) {
-      inTriangle = true;
-      break;
-    }
-  }
-  if (!inTriangle) return;
   points.push(new Point(mouseX, mouseY));
   addPoint(points[points.length - 1]);
 }
@@ -453,4 +469,54 @@ function windowResized() {
   windowHeight = window.innerHeight - 40;
   windowWidth = window.innerWidth;
   resizeCanvas(windowWidth, windowHeight);
+}
+
+
+function findAllUniquePoints(){
+  let uniquePoints = [];
+  for(let i = 0; i < Data.length; i++){
+    uniquePoints.push(new Point2(Data[i].name, Data[i].position.latitude, Data[i].position.longitude, Data[i].address, Data[i].number));  
+  }
+  return uniquePoints;
+}
+
+function findPolygons(){
+  let polygons = [];
+  //loop through Data
+  for(let i = 0; i < Data.length; i++){
+    let polygonPoints = [];
+    
+    //loop through all Triangles and check if the number of station matched
+    for(let j = 0; j < Triangles.length; j++){
+      if(Data[i].number == Triangles[j].p1.number){
+        polygonPoints.push(Triangles[j].center);
+      }
+      if(Data[i].number == Triangles[j].p2.number){
+        polygonPoints.push(Triangles[j].center);
+      }
+      if(Data[i].number == Triangles[j].p3.number){
+        polygonPoints.push(Triangles[j].center);
+      }
+    }
+
+    polygons.push(new StationPolygon(Data[i], polygonPoints));
+  }
+
+  return polygons;
+}
+
+class StationPolygon{
+  constructor(station, points){
+    this.station = station;
+    this.points = points;
+    //divide each points coordinate by 10000
+    for(let i = 0; i < this.points.length; i++){
+      this.points[i].x = 46 + this.points[i].x / 10000;
+      this.points[i].y = 14 + this.points[i].y / 10000;
+    }
+    //sort the points by angle
+    this.points.sort(function(a, b){
+      return atan2(a.y - station.y, a.x - station.x) - atan2(b.y - station.y, b.x - station.x);
+    });
+  }
 }

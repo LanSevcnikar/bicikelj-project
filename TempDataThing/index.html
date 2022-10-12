@@ -1,0 +1,44 @@
+<html>
+
+	<head>
+		<title>
+			Wolfram
+		</title>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		
+		<!-- <script src="libraries/p5.js" type="text/javascript"></script>
+			<script src="libraries/p5.dom.js" type="text/javascript"></script>
+			<script src="libraries/p5.sound.js" type="text/javascript"></script> -->
+
+			<script src="data.js"></script>
+			<script src="data2.js"></script>
+			<script src="voronoiDiagrams.js" type="text/javascript"></script>
+    	<script src="sketch.js" type="text/javascript"></script>
+
+			<!-- Make a 40 pixels tall bar with a selection element -->
+			<div id="myDiv" style="height:40px; padding-left: 30px">
+				<h4 style="padding-top: 5px; font-family: 'Courier New', Courier, monospace;">
+					Add points with mouse click, only in pre-made triangle
+					<select id="selectForType">
+						<option value="1">Delaunay Triangulation</option>
+						<option value="2">Voronoi Diagram</option>
+					</select>
+					<button id="resetButton" onclick="reset()">
+						RESET
+					</button>
+					<button onclick="loadExample()">
+						LOAD EXAMPLE
+					</button>
+				</h4>
+			</div>
+
+		
+
+     	<style> body {padding: 0px; margin: 0;} canvas {vertical-align: top;} </style>
+
+
+	</body>
+</html>
