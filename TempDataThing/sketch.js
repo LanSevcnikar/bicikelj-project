@@ -266,8 +266,7 @@ function loadTheData() {
         (point.position.latitude - 46) * 10000,
         (point.position.longitude - 14) * 10000,
         point.address,
-        point.number,
-
+        point.number
       )
     );
   });
@@ -276,7 +275,7 @@ function loadTheData() {
     addPoint(points[i]);
     console.log(triangles.length, i);
   }
-  console.log(triangles)
+  console.log(triangles);
 }
 
 function loadExample() {
@@ -471,31 +470,39 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
-
-function findAllUniquePoints(){
+function findAllUniquePoints() {
   let uniquePoints = [];
-  for(let i = 0; i < Data.length; i++){
-    uniquePoints.push(new Point2(Data[i].name, Data[i].position.latitude, Data[i].position.longitude, Data[i].address, Data[i].number));  
+  for (let i = 0; i < Data.length; i++) {
+    uniquePoints.push(
+      new Point2(
+        Data[i].name,
+        Data[i].position.latitude,
+        Data[i].position.longitude,
+        Data[i].address,
+        Data[i].number
+      )
+    );
   }
   return uniquePoints;
 }
 
-function findPolygons(){
+function findPolygons() {
   let polygons = [];
   //loop through Data
-  for(let i = 0; i < Data.length; i++){
+  for (let i = 0; i < Data.length; i++) {
     let polygonPoints = [];
-    
+
     //loop through all Triangles and check if the number of station matched
-    for(let j = 0; j < Triangles.length; j++){
-      if(Data[i].number == Triangles[j].p1.number){
-        polygonPoints.push(Triangles[j].center);
-      }
-      if(Data[i].number == Triangles[j].p2.number){
-        polygonPoints.push(Triangles[j].center);
-      }
-      if(Data[i].number == Triangles[j].p3.number){
-        polygonPoints.push(Triangles[j].center);
+    for (let j = 0; j < Triangles.length; j++) {
+      console.log(Triangles[j].center);
+      if (
+        Data[i].number == Triangles[j].p1.number ||
+        Data[i].number == Triangles[j].p2.number ||
+        Data[i].number == Triangles[j].p3.number
+      ) {
+        polygonPoints.push(
+          new Point(Triangles[j].center.x, Triangles[j].center.y)
+        );
       }
     }
 
@@ -505,18 +512,21 @@ function findPolygons(){
   return polygons;
 }
 
-class StationPolygon{
-  constructor(station, points){
+class StationPolygon {
+  constructor(station, points) {
     this.station = station;
     this.points = points;
     //divide each points coordinate by 10000
-    for(let i = 0; i < this.points.length; i++){
+    for (let i = 0; i < this.points.length; i++) {
       this.points[i].x = 46 + this.points[i].x / 10000;
       this.points[i].y = 14 + this.points[i].y / 10000;
     }
     //sort the points by angle
-    this.points.sort(function(a, b){
-      return atan2(a.y - station.y, a.x - station.x) - atan2(b.y - station.y, b.x - station.x);
+    this.points.sort(function (a, b) {
+      return (
+        atan2(a.y - station.y, a.x - station.x) -
+        atan2(b.y - station.y, b.x - station.x)
+      );
     });
   }
 }
