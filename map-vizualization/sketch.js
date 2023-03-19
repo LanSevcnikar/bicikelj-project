@@ -1,3 +1,12 @@
+// make a vue app and attach it to the app element
+const app = Vue.createApp({
+  data() {
+    return {};
+  },
+}).mount("#app");
+
+
+
 let myMap;
 let canvas;
 const mappa = new Mappa("Leaflet");
@@ -12,7 +21,7 @@ const options = {
 
 //function to calc dist between any two points
 function distBetweenPointsBiased(p1, p2) {
-  return Math.sqrt(2.6*Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
+  return Math.sqrt(2.6 * Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
 }
 
 class Station {
