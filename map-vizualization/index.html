@@ -5,39 +5,56 @@
 		Wolfram
 	</title>
 	<!-- import vue -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-	<script src="https://unpkg.com/vue@next"></script>	<script src="../libraries/p5.js" type="text/javascript"></script>
+	<script src="https://unpkg.com/vue@3.2.47"></script>
+	
+	<script src="../libraries/p5.js" type="text/javascript"></script>
 	<script src="../libraries/p5.dom.js" type="text/javascript"></script>
 	<script src="../libraries/p5.sound.js" type="text/javascript"></script>
 
 	<script src="../libraries/mappa.js" type="text/javascript"></script>
 
 	<script src="data.js"></script>
-	<script src="sketch.js"></script>
 </head>
 
 <body>
 	<!-- Make a vue app -->
 	<div id="app">
 		<div class="container">
+			{{ date }}
+			<!-- Add a checkbox to show points, a checkbox to show areas and an input field into which I will be able to write the date between 2022/10/12 and 2022/2022/10/31 -->
+			<div class="row">
+				<div class="col-4">
+					<input type="checkbox" v-model="showPoints" @change="updateMap"> Show points
+				</div>
+				<div class="col-4">
+					<input type="checkbox" v-model="showAreas" @change="updateMap"> Show areas
+				</div>
+				<div class="col-4">
+					<input type="checkbox" v-model="showLines" @change="updateMap"> Show lines
+				</div>
+				<div class="col-4">
+					<input type="date" v-model="date">
+				</div>
+				<!-- add another button that will render it -->
+				<div class="col-4">
+					<button @click="updateMap">Update</button>
+				</div>
+			</div>
 		</div>
 	</div>
+	
 
-
-
-	<style>
-		body {
-			padding: 00px;
-			margin: 0;
-		}
-
-		canvas {
-			vertical-align: top;
-		}
-	</style>
-
-
+	<script src="sketch.js"></script>
 </body>
+<style>
+	body {
+		padding: 00px;
+		margin: 0;
+	}
+
+	canvas {
+		vertical-align: top;
+	}
+</style>
 
 </html>

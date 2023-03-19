@@ -1,11 +1,20 @@
 // make a vue app and attach it to the app element
-const app = Vue.createApp({
+const { createApp } = Vue;
+let app = createApp({
   data() {
-    return {};
+    return {
+      showPoints: true,
+      showAreas: true,
+      showLines: true,
+      date: "2022-10-13",
+      hour: "18:00",
+    };
   },
-}).mount("#app");
-
-
+  methods: {
+    updateMap() {},
+  },
+});
+app.mount("#app");
 
 let myMap;
 let canvas;
