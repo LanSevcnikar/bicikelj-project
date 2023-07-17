@@ -1,20 +1,18 @@
 // make a vue app and attach it to the app element
 const { createApp } = Vue;
+
 let app = createApp({
   data() {
     return {
       showPoints: true,
       showAreas: true,
-      showLines: true,
-      date: "2022-10-13",
-      hour: "18:00",
+      date: "2022-10-16",
+      hour: "12-00",
     };
   },
-  methods: {
-    updateMap() {},
-  },
-});
-app.mount("#app");
+}).mount("#app");
+
+console.log("mounted");
 
 let myMap;
 let canvas;
@@ -102,28 +100,25 @@ class StationPolygon {
   }
 
   //create a draw function, taking three arguments called, showPoint, showShape, showColor
-  draw(showPoint, showShape, showColor) {
+  draw(showPoint, showShape) {
     //if showPoint is true, draw the points
     if (showPoint) {
       this.station.draw();
     }
     //if showShape is true, draw the shape
     if (showShape) {
-      this.drawShape(showColor);
+      this.drawShape();
     }
   }
 
-  drawShape(showColor) {
+  drawShape() {
     //if showColor is true, fill the shape with a color
-    if (showColor) {
-      if (this.isHoverOver) {
-        fill(255, 0, 0);
-      } else {
-        fill(255, 0, 0, 100);
-      }
+    if (this.isHoverOver) {
+      fill(255, 0, 0);
     } else {
-      fill(0);
+      fill(255, 0, 0, 100);
     }
+
     //draw the shape
     beginShape();
     for (let i = 0; i < this.points.length; i++) {
@@ -165,7 +160,7 @@ function draw() {
   clear();
   radius = map(myMap.zoom(), 10, 18, 3, 20);
   for (let i = 0; i < stations.length; i++) {
-    stations[i].draw(true, true, true);
+    stations[i].draw(app.showPoints, app.showAreas, true);
     stations[i].isMouseInsideOfPolygon();
   }
   erase();
